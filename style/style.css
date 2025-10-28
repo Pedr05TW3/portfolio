@@ -1,0 +1,355 @@
+/* ======== ESTILOS GERAIS ======== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #456BBC;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ======== CABEÇALHO ======== */
+.cabecalho {
+    background-color: #12192A;
+    padding: 10px 0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.menu-superior {
+    display: flex;
+    color: #456BBC;
+    align-items: center;
+    max-width: 1100vw;
+    gap: 40px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.titulo-menu {
+    color: #456BBC;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.lista-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.lista-menu li a {
+    color: #456BBC;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.lista-menu li a:hover {
+    text-decoration: underline;
+}
+
+/* ======== PERFIL ======== */
+.secao-perfil {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #12192A;
+    border-radius: 25px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.secao-superior {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-radius: 25px;
+    gap: 40px;
+    padding: 40px;
+    max-height: 60vh;
+}
+
+#projetos{
+    display: flex;
+    border-radius: 10px;
+    gap: 40px;
+    padding: 40px;
+}
+
+#projetos-corpo{
+    display: flex;
+    height: fit-content;
+    max-width: 100%;
+    flex-direction: column;
+    background-color: #12192A;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+#projetos2{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    max-width: 95%;
+    gap: 40px;
+    padding: 40px;
+}
+
+.imagem-perfil {
+    width: 200px;
+    height: 200px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #456BBC;
+    text-align: center;
+}
+
+.informacoes-perfil {
+    flex: 1;
+    min-width: 300px;
+}
+
+.nome-perfil {
+    color: #456BBC;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.texto-perfil {
+    line-height: 1.6;
+    font-size: 16px;
+    color: #456BBC;
+}
+
+/* ======== EXPERIÊNCIAS ======== */
+.secao-experiencias {
+    background-color: #12192A;
+    padding: 15px;
+    border-radius: 25px;
+    flex: 0.8;
+}
+
+.titulo-experiencias {
+    color: #456BBC;
+    margin-bottom: 10px;
+}
+
+/* ======== CONTATO E PROJETOS ======== */
+.secao-inferior {
+   display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    gap: 40px;
+    padding: 0px 40px 40px 40px;
+}
+
+/* ======== CONTATO ======== */
+.secao-contato {
+    background-color: #12192A;
+    flex: 1;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.titulo-contato {
+    color: #456BBC;
+    margin-bottom: 15px;
+}
+
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.campo-email,
+.campo-mensagem {
+    background-color: #1e1e1e;
+    color: #c9d1d9;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+}
+
+.campo-mensagem {
+    height: 100px;
+}
+
+.botao-enviar {
+    background-color: #456BBC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.botao-enviar:hover {
+    background-color: #295ac3;
+}
+
+/* ======== PROJETOS ======== */
+.secao-projetos {
+    background-color: #12192A;
+    flex: 1;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.texto-projetos {
+    color: #456BBC;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 4rem;
+    gap: 10vw;
+}
+.texto-projetos2 {
+    color: #456BBC;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    gap: 17vw;
+}
+
+.descricao-projetos {
+    font-size: 16px;
+    padding-left: 10px;
+    text-align: center;
+    color: #456BBC;
+}
+
+.secao-projetos2 {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    height: fit-content;
+    gap: 20px;
+    max-width: 100%;
+    background-color: #12192A;
+}
+
+.titulo-projetos {
+    color: #456BBC;
+    margin-bottom: 15px;
+}
+
+.galeria-projetos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.imagem-projeto {
+    width: 23vw;
+    height: 30vh;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #456BBC;
+}
+
+.imagem-projeto2 {
+    max-width: 100%;
+    min-height: 30vh;
+    opacity: 0.7;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #456BBC;
+}
+
+/* ======== RODAPÉ ======== */
+.rodape {
+    background-color: #12192A;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto-rodape {
+    color: #456BBC;
+}
+
+.icones-rodape {
+    display: flex;
+    gap: 30px;
+    margin-right: 20px;
+}
+
+.icone {
+    background-color: #0d1117;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* ======== RESPONSIVIDADE ======== */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .menu-superior {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .secao-perfil {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .secao-experiencias {
+        width: 100%;
+    }
+
+    .secao-inferior {
+        flex-direction: column;
+    }
+
+    .galeria-projetos {
+        flex-direction: column;
+    }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .lista-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .imagem-perfil {
+        width: 150px;
+        height: 150px;
+    }
+
+    .conteudo-principal {
+        padding: 0 10px;
+    }
+
+    .rodape {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
