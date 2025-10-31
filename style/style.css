@@ -231,6 +231,18 @@ a {
     color: #456BBC;
 }
 
+#my-chart {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+#my-chart .column {
+  background-color: #456BBC;
+}
+#my-chart .legend {
+  color: #456BBC;
+}
+
 .secao-projetos2 {
     display: grid;
     grid-template-columns: repeat(4, minmax(200px, 1fr));
