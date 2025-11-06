@@ -1,7 +1,8 @@
 /* ======== ESTILOS GERAIS ======== */
 body {
     font-family: Arial, sans-serif;
-    background-color: black !important;
+    background-color: #04080f !important;
+    
     color: #456BBC;
     margin: 0;
     padding: 0;
@@ -9,16 +10,32 @@ body {
 
 a {
     text-decoration: none;
+    color: #456BBC !important;
+}
+
+a:hover {
+    color: #295ac3 !important;
+    font-weight: 600;
+}
+.nav-link.active {
+    color: white !important;
+    background-color: #456BBC !important;
 }
 
 
-
-/* ======== CABEÇALHO ======== */
 .cabecalho {
     background-color: #12192A;
     padding: 10px 0;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+}
+
+.conteudo-principal {
+    padding: 40px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .menu-superior {
@@ -65,6 +82,7 @@ a {
     border-radius: 25px;
     padding: 20px;
     gap: 20px;
+    background: linear-gradient(to right, #12192A, #18192A);
 }
 
 .secao-superior {
@@ -72,7 +90,6 @@ a {
     grid-template-columns: 2fr 1fr;
     border-radius: 25px;
     gap: 40px;
-    padding: 40px;
     max-height: 60vh;
 }
 
@@ -80,7 +97,6 @@ a {
     display: flex;
     border-radius: 10px;
     gap: 40px;
-    padding: 40px;
 }
 
 #projetos-corpo{
@@ -89,6 +105,7 @@ a {
     max-width: 100%;
     flex-direction: column;
     background-color: #12192A;
+    background: linear-gradient(to right, #12192A, #18192A);
     border-radius: 25px;
     padding: 20px;
 }
@@ -99,7 +116,6 @@ a {
     border-radius: 10px;
     max-width: 95%;
     gap: 40px;
-    padding: 40px;
 }
 
 .imagem-perfil {
@@ -133,7 +149,7 @@ a {
 
 /* ======== EXPERIÊNCIAS ======== */
 .secao-experiencias {
-    background-color: #12192A;
+    background: linear-gradient(to right, #12192A, #18192A);
     padding: 15px;
     border-radius: 25px;
     flex: 0.8;
@@ -150,12 +166,11 @@ a {
     flex-direction: row;
     border-radius: 25px;
     gap: 40px;
-    padding: 0px 40px 40px 40px;
 }
 
 /* ======== CONTATO ======== */
 .secao-contato {
-    background-color: #12192A;
+    background: linear-gradient(to right, #12192A, #18192A);
     flex: 1;
     border-radius: 25px;
     padding: 20px;
@@ -201,7 +216,7 @@ a {
 
 /* ======== PROJETOS ======== */
 .secao-projetos {
-    background-color: #12192A;
+    background: linear-gradient(to right, #12192A, #18192A);
     flex: 1;
     border-radius: 25px;
     padding: 20px;
@@ -249,7 +264,7 @@ a {
     height: fit-content;
     gap: 20px;
     max-width: 100%;
-    background-color: #12192A;
+    background: linear-gradient(to right, #12192A, #18192A);
 }
 
 .titulo-projetos {
@@ -274,10 +289,20 @@ a {
     color: #456BBC;
 }
 
+.imagem-projeto-link {
+    opacity: 0.7;
+
+}
+.imagem-projeto-link:hover {
+    opacity: 0.85;
+    transform: scale(1.02);
+    transition: ease-in-out 0.3s;
+
+}
+
 .imagem-projeto2 {
     max-width: 100%;
     min-height: 30vh;
-    opacity: 0.7;
     background-color: #1e1e1e;
     border-radius: 8px;
     display: flex;
