@@ -23,12 +23,7 @@ a:hover {
 }
 
 
-.cabecalho {
-    background-color: #12192A;
-    padding: 10px 0;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
+
 
 .conteudo-principal {
     padding: 40px;
@@ -430,7 +425,7 @@ a:hover {
     #inferiorindex {
     display: flex;
     flex-direction: column;
-    margin-top: 220px;
+    margin-top: 50%;
     gap: 20px;
     padding: 0px;
     }
@@ -442,5 +437,15 @@ a:hover {
         width: 100%;
         height: auto;
     }
+    .cabecalho {
+    font-size: medium;
+    }
+    #principalskills {
+    padding-top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
     
 }
