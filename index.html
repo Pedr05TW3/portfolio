@@ -25,11 +25,11 @@
     </div>
 
 
-    <main class="conteudo-principal">
+    <main class="conteudo-principal" id="paginaindex">
         <div class="container-fluid"
             style="display: flex; flex-direction: column; gap: 40px; max-width: 100%; padding: 0px;">
 
-            <div class="secao-superior">
+            <div class="secao-superior" id="superiorindex">
                 <div class="container-fluid" style="padding: 0px;">
                     <div class="secao-perfil container">
                         <img src="assets/eu.png" style="opacity: 0.7;" alt="Foto de Pedro Costa" class="imagem-perfil">
@@ -64,8 +64,8 @@
             </div>
 
 
-            <div class="secao-inferior">
-                <div class="container-fluid" style="display: flex; gap: 40px; padding: 0px;">
+            <div class="secao-inferior" id="inferiorindex">
+                <div class="container-fluid" id="inferiorindex" style="display: flex; gap: 40px; padding: 0px;">
                     <div class="secao-contato container">
                         <h1 class="titulo-experiencias">Contato</h1>
                         <form class="formulario-contato">
@@ -74,19 +74,19 @@
                             <textarea id="mensagem" class="campo-mensagem"
                                 placeholder="Escreva sua mensagem aqui..."></textarea>
 
-                            <button class="botao-enviar">Enviar</button>
+                            <a class="botao-enviar" href="mailto:pedroeusoudoscosta@gmail.com?subject=Contato%20-%20Portf%C3%B3lio"><p style="color: white; text-align: center; font-weight: 600;">Enviar</p></a>
                         </form>
                     </div>
 
 
-                    <div class="secao-projetos container">
+                    <div class="secao-projetos container" id="projetosindex">
                         <h1 class="titulo-experiencias">Projetos Principais</h1>
                         <div class="galeria-projetos">
                             <a class="imagem-projeto-link" href="projetos/portfolio-html/index.html"
                                 target="_blank"><img src="assets/bulbassauro.png" alt="Projeto Pokemons"
-                                    class="imagem-projeto"></a>
+                                    class="imagem-projeto" id="imagemindex"></a>
                             <a class="imagem-projeto-link" href="projetos/numero-secreto/index.html"
-                                target="_blank"><img src="assets/numero-secreto.png" alt="Projeto Número Secreto"
+                                target="_blank"><img id="imagemindex" src="assets/numero-secreto.png" alt="Projeto Número Secreto"
                                     class="imagem-projeto"></a>
                         </div>
                     </div>
@@ -99,7 +99,6 @@
 
 
 
-    <div class="container-fluid" style="background-color: #12192A;">
         <footer class="rodape align-itens-center">
             <p class="texto-rodape">© PEDRO COSTA</p>
             <div class="icones-rodape">
@@ -116,7 +115,6 @@
                     </svg></a>
             </div>
         </footer>
-    </div>
 
     <script src="script/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

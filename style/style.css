@@ -205,6 +205,7 @@ a:hover {
     background-color: #456BBC;
     color: white;
     border: none;
+    height: 40px;
     border-radius: 5px;
     padding: 8px;
     cursor: pointer;
@@ -242,6 +243,7 @@ a:hover {
 .descricao-projetos {
     font-size: 16px;
     padding-left: 10px;
+    margin-top: 10px;
     text-align: center;
     color: #456BBC;
 }
@@ -341,9 +343,10 @@ a:hover {
 
 /* Tablets */
 @media (max-width: 992px) {
-    .menu-superior {
+    .container {
         flex-direction: column;
-        gap: 10px;
+        gap: 20px;
+        padding: 20px;
     }
 
     .secao-perfil {
@@ -368,7 +371,29 @@ a:hover {
 /* Celulares */
 @media (max-width: 600px) {
     body {
+        display: flex;
+        flex-direction: column;
         font-size: 14px;
+        gap: 20px;
+    }
+
+    #skills1{
+        padding: 0px;
+        font-size: small;
+    }
+    #skills2{
+        padding: 0px;
+        font-size: small;
+    }
+
+    #textoduplo{
+    height: 100%;
+    
+    }
+    #colunatextoduplo{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
     }
 
     .lista-menu {
@@ -386,9 +411,36 @@ a:hover {
         padding: 0 10px;
     }
 
-    .rodape {
-        flex-direction: column;
+    #rodapeskills {
         gap: 10px;
-        text-align: center;
+        margin-top: 100px;
     }
+
+    #paginaindex {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    }
+    #superiorindex {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px;
+}
+    #inferiorindex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 220px;
+    gap: 20px;
+    padding: 0px;
+    }
+    #projetosindex{
+        display: flex;
+        flex-direction: column;
+    }
+    #imagemindex{
+        width: 100%;
+        height: auto;
+    }
+    
 }

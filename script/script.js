@@ -1,4 +1,4 @@
- import 'charts.css';
+import 'charts.css';
  
 document.querySelector('.botao-enviar').addEventListener('click', sendEmail);
 
