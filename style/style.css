@@ -182,7 +182,6 @@ a:hover {
     gap: 10px;
 }
 
-.campo-email,
 .campo-mensagem {
     background-color: #1e1e1e;
     color: #c9d1d9;
@@ -190,10 +189,7 @@ a:hover {
     border-radius: 5px;
     padding: 10px;
     outline: none;
-}
-
-.campo-mensagem {
-    height: 100px;
+    height: 20dvh;
 }
 
 .botao-enviar {

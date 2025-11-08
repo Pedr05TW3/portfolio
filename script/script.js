@@ -1,10 +1,17 @@
-import 'charts.css';
- 
-document.querySelector('.botao-enviar').addEventListener('click', sendEmail);
 
 
+var botao = document.getElementById('submitemail');
 
-function sendEmail() {
-    const mailtoLink = `mailto:pedroeusoudoscosta@gmail.com?subject=Contato%20-%20Portf%C3%B3lio`;
-    window.location.href = mailtoLink;
+botao.addEventListener('click', sendemail);
+
+function sendemail() {
+  const mensagem = document.getElementById("mensagem").value.trim();
+
+  const destinatario = "pedroeusoudoscosta@gmail.com";
+  const assunto = "Contato - Portfólio";
+  const corpo = encodeURIComponent(mensagem);
+
+  const mailtoLink = `mailto:${destinatario}?subject=${encodeURIComponent(assunto)}&body=${corpo}`;
+
+  window.location.href = mailtoLink;
 }
