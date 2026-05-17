@@ -1,0 +1,188 @@
+body,
+html {
+	min-height: 100vh;
+	min-width: 100vw;
+	display: flex;
+	align-items: left;
+	justify-content: flex-start;
+	font-family: 'Raleigh BT', 'Arial', sans-serif;
+	background: linear-gradient(to bottom, #EBEBEB, #DBFFB1);
+}
+
+hr{
+	border: none;
+	height: 1.5px;
+	background-color: black;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+a, a:link, a:visited, a:hover, a:active{
+	text-decoration: none;
+	color: black;
+}
+
+.menu-lateral{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	background: linear-gradient(to bottom, #ffffff 0%, #B8EB7D 100%);
+	border: 1px solid #9fde58;
+	min-height: 100vh;
+	min-width: 15vw;
+	padding: 20px;
+	gap: 15px;
+	
+}
+
+.contato{
+	margin-top: auto;
+	margin-bottom: 10px;
+}
+
+.divisao-principal{
+    display: flex;
+	min-height: 100vh;
+	width: 45vw;
+	padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	margin-left: 100px;
+	margin-right: 100px;
+	border: 1px solid #9fde58;
+	background: linear-gradient(to bottom, #ffffff 0%, #B8EB7D 100%);
+}
+
+.noticias-recentes{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	width: 20vw;
+	margin-right: 3%;
+	justify-self: flex-end;
+}
+
+.noticias-recentes .noticia-item {
+    position: relative;
+	margin-bottom: 20px;
+	width: 17vw;
+}
+
+.noticias-recentes .noticia-item img {
+    opacity: 0.7;
+    display: inline-block;
+}
+
+.noticias-recentes .noticia-item .texto-noticia {
+	position: absolute;
+	margin: 8px;
+	bottom: 0%;
+	color: white;
+	font-weight: 600;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.msg_card_body {
+    background: linear-gradient(to bottom, #EBEBEB, #DBFFB1);
+	width: 40vw;
+}
+
+.user_img_msg {
+	height: 40px;
+	width: 40px;
+	border: 1.5px solid #f5f6fa;
+}
+
+
+.msg_cotainer {
+	background-color: #ffffff;
+	padding: 10px;
+	position: relative;
+	width: 60vw;
+}
+
+.msg_cotainer_send {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 10px;
+	border-radius: 10px;
+	background-color: #B8EB7D;
+	padding: 10px;
+	position: relative;
+	width: 60vw;
+}
+
+
+#mensagem{
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+	width: 100%;
+}
+
+#caixa-mensagem{
+border: none;
+width: auto;
+}
+
+#action_menu_btn {
+	background-color: #8BBB62;
+	color: white;
+	cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+.input-group-append{
+    padding: 10px;
+    border: 100px;
+    border-color: #8BBB62;
+}
+
+.envio{
+	background-color: white;
+	width: 42vw;
+}
+
+.action_menu {
+	z-index: 1;
+	position: absolute;
+	padding: 15px 0;
+	background-color: #7da94b;
+	color: white;
+	border-radius: 15px;
+	bottom: 75px;
+	left: 15px;
+	display: none;
+}
+
+.action_menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.action_menu ul li {
+	width: 100%;
+	padding: 10px 15px;
+	margin-bottom: 5px;
+}
+
+.action_menu ul li i {
+	padding-right: 10px;
+}
+
+.action_menu ul li:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+

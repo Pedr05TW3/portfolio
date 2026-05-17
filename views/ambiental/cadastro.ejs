@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheets/ambiental/styles.css">
+    <title>Início</title>
+     <link rel="icon" type="image/x-icon" href="images/ambiental/favicon.ico">
+</head>
+<body class="body-login">
+    <!--Parte Central da página, onde fica o título, imagem e texto principais-->
+    <div class="divisao-principal-login">
+        <h1 class="titulo">Cadastro</h1>
+        <hr size="2" color="black"></hr>
+        <div>
+            <form class="login-form" onsubmit="location.href='projeto-ambiental';" method="put">
+                <label for="username">Usuário:</label>
+                <input placeholder="Digite seu nome de usuário:" type="text" id="username" name="username" required><br><br>
+                <label for="email">E-mail:</label>
+                <input placeholder="exemplo@exemplo.com" type="email" id="email" name="email" required><br><br>
+                
+                <label for="password">Senha:</label>
+                <input placeholder="Digite sua senha:" type="password" id="password" name="password" required><br><br>
+                <label for="password">Confirmar senha:</label>
+                <input placeholder="Repita sua senha:" type="password" id="password" name="password" required><br><br>
+
+                <button class="botao-login" onclick="location.href='login-ambiental';" type="submit">Cadastrar</button>
+                <a class="tem-conta" href="login-ambiental">Já tenho uma conta? Fazer login</a>
+            </form>
+    </div>
+</body>
+</html>
