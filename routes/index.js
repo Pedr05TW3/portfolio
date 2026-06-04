@@ -13,7 +13,7 @@ router.get('/home', function(req, res, next) {
 router.get('/projetos', function(req, res, next) {
   res.render('main/projetos', { title: 'Express' });
 });
-router.get('/skills', function(req, res, next) {
+router.get('/experiencias', function(req, res, next) {
   res.render('main/skills', { title: 'Express' });
 });
 router.get('/certificacoes', function(req, res, next) {

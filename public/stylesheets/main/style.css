@@ -94,9 +94,10 @@ a:hover {
     gap: 40px;
 }
 
-#projetos-corpo{
+.projetos-corpo{
     display: flex;
     height: fit-content;
+    margin-bottom: 20px;
     max-width: 100%;
     flex-direction: column;
     background-color: #12192A;
@@ -110,7 +111,7 @@ a:hover {
     flex-direction: column;
     border-radius: 10px;
     max-width: 95%;
-    gap: 40px;
+    gap: 20px;
 }
 
 .imagem-perfil {
@@ -331,234 +332,357 @@ a:hover {
     border-radius: 5px;
 }
 
-/* ======== RESPONSIVIDADE ======== */
 
-/* Tablets */
-@media (max-width: 992px) {
-      body {
-        display: flex;
-        flex-direction: column;
-        font-size: 14px;
-        gap: 20px;
-    }
-
-    .secao-perfil{
-        margin: 0px !important;
-
-        width: 100% !important;
-    }
-
-    #skills1{
-        padding: 0px;
-        font-size: small;
-    }
-    #skills2{
-        padding: 0px;
-        font-size: small;
-    }
-
-    #textoduplo{
-    height: 100%;
-    
-    }
-    #colunatextoduplo{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 20px;
-    }
-
-    .lista-menu {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-
-    .conteudo-principal {
-        padding: 0 10px;
-    }
-
-    #rodapeskills {
-        gap: 10px;
-    }
-
-    #paginaindex {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    }
-    #superiorindex {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin: 0 5% 0 5% ;
-    padding: 0px;
+body {
+    background-color: #04080f !important;
+    color: #456BBC;
+    min-height: 100vh;
 }
-    #inferiorindex {
+
+/* ---------- CONTAINER PRINCIPAL ---------- */
+
+.conteudo-principal {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px 20px 0px 20px;
+}
+
+/* ---------- NAVBAR ---------- */
+
+.cabecalho {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background-color: rgba(18, 25, 42, 0.95) !important;
+
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid rgba(69, 107, 188, 0.15);
+}
+
+.nav-link {
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(69, 107, 188, .15);
+}
+
+.nav-link.active {
+    background-color: #456BBC !important;
+    color: white !important;
+}
+
+/* ---------- CARDS ---------- */
+
+.secao-perfil,
+.secao-experiencias,
+.secao-contato,
+.secao-projetos,
+.projetos-corpo {
+    background: linear-gradient(
+        135deg,
+        #12192A,
+        #1a2238
+    );
+
+    border-radius: 24px;
+
+    border: 1px solid rgba(69, 107, 188, .15);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, .25);
+
+    transition: all .3s ease;
+}
+
+.secao-perfil:hover,
+.secao-experiencias:hover,
+.secao-contato:hover,
+.secao-projetos:hover,
+.projetos-corpo:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, .35);
+}
+
+/* ---------- SEÇÃO SUPERIOR ---------- */
+
+.secao-superior {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 2fr)
+        minmax(300px, 1fr);
+
+    gap: 30px;
+
+    max-height: unset;
+}
+
+/* ---------- PERFIL ---------- */
+
+.secao-perfil {
+    padding: 30px;
+}
+
+.imagem-perfil {
+    width: 220px;
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    border: 3px solid #456BBC;
+
+    box-shadow:
+        0 0 25px rgba(69, 107, 188, .25);
+}
+
+.nome-perfil {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.texto-perfil {
+    color: #b9c7e6;
+}
+
+/* ---------- EXPERIÊNCIAS ---------- */
+
+.secao-experiencias {
+    padding: 25px;
+}
+
+.titulo-experiencias {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* ---------- SEÇÃO INFERIOR ---------- */
+
+.secao-inferior {
     display: flex;
-    flex-direction: column;
-    justify-content: center !important;
-    margin-top: 28dvh;
-    width: 100%;
-    padding: 0px;
-    }
-    
-    #projetosindex{
-        display: flex;
-        flex-direction: column;
-    
-    }
-    #imagemindex{
-        width: 100%;
-        height: auto;
-    }
-    .cabecalho {
-    font-size: medium;
-    }
-    #principalskills {
-    display: flex;
+    gap: 30px;
+}
+
+.secao-contato,
+.secao-projetos {
+    padding: 25px;
+}
+
+/* ---------- TEXTAREA ---------- */
+
+.campo-mensagem {
+    background-color: #0f1626;
+
+    border: 1px solid rgba(69,107,188,.20);
+
+    color: white;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    transition: .3s;
+}
+
+.campo-mensagem:focus {
+    border-color: #456BBC;
+
+    box-shadow:
+        0 0 15px rgba(69,107,188,.2);
+}
+
+/* ---------- BOTÃO ---------- */
+
+.botao-enviar {
+    display: flex !important;
+
     justify-content: center;
     align-items: center;
-    }
 
-    
+    height: 50px;
+
+    border-radius: 12px !important;
+
+    background: linear-gradient(
+        135deg,
+        #456BBC,
+        #295ac3
+    ) !important;
+
+    transition: all .3s ease;
 }
-@media (max-width: 700px) {
-#inferiorindex {
-    display: flex;
-    flex-direction: column;
-    margin-top: 15dvh;
-    padding: 0px;
-    }
 
-    #superiorindex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+.botao-enviar:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 20px rgba(69,107,188,.3);
+}
+
+/* ---------- PROJETOS ---------- */
+
+.galeria-projetos {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
     gap: 20px;
-    margin: 20px;
-    padding: 50px;
-    margin-top: 210px;
 }
 
+.imagem-projeto,
+.imagem-projeto2 {
+    width: 100%;
+    height: 220px;
 
+    object-fit: cover;
 
+    border-radius: 15px;
+
+    transition: all .3s ease;
 }
-    /* .container {
-        gap: 20px;
-        padding: 20px;
 
+.imagem-projeto-link {
+    opacity: 1;
+}
+
+.imagem-projeto-link:hover {
+    transform: scale(1.03);
+}
+
+.imagem-projeto:hover,
+.imagem-projeto2:hover {
+    transform: scale(1.02);
+}
+
+/* ---------- PROJETOS GRID ---------- */
+
+.secao-projetos2 {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 20px;
+}
+
+/* ---------- FOOTER ---------- */
+
+.rodape {
+    margin-top: 30px;
+
+    border-top:
+        1px solid rgba(69,107,188,.15);
+}
+
+.icones-rodape a {
+    transition: .3s;
+}
+
+.icones-rodape a:hover {
+    transform: translateY(-2px);
+}
+
+/* ---------- ANIMAÇÕES ---------- */
+
+.secao-perfil,
+.secao-experiencias,
+.secao-contato,
+.secao-projetos,
+.projetos-corpo {
+    animation: fadeUp .6s ease;
+}
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
     }
 
-    .secao-superior{
-    height: 60dvh;
-    margin-bottom: 30dvh;
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==========================================
+   RESPONSIVIDADE
+   ========================================== */
+
+@media (max-width: 992px) {
+
+    .secao-superior {
+        grid-template-columns: 1fr;
+    }
+
+    .secao-inferior,
+    #inferiorindex {
+        flex-direction: column;
     }
 
     .secao-perfil {
         flex-direction: column;
-        align-items: center;
         text-align: center;
     }
 
-    .secao-experiencias {
-        width: 100%;
+    .informacoes-perfil {
+        min-width: auto;
     }
 
-    .secao-inferior {
-        flex-direction: column;
+    .imagem-perfil {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .conteudo-principal {
+        padding: 20px 15px;
+    }
+
+    .nome-perfil {
+        font-size: 1.7rem;
     }
 
     .galeria-projetos {
-        flex-direction: column;
-    } */
-
-
-/* Celulares */
-@media (max-width: 600px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        font-size: 14px;
-        gap: 20px;
+        grid-template-columns: 1fr;
     }
 
-    #skills1{
-        padding: 0px;
-        font-size: small;
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    #skills2{
-        padding: 0px;
-        font-size: small;
-    }
+}
 
-    #textoduplo{
-    height: 100%;
-    
-    }
-    #colunatextoduplo{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 20px;
-    }
-
-    .lista-menu {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
+@media (max-width: 576px) {
 
     .imagem-perfil {
         width: 150px;
         height: 150px;
     }
 
-    .conteudo-principal {
-        padding: 0 10px;
+    .texto-perfil {
+        font-size: .95rem;
     }
 
-    #rodapeskills {
-        gap: 10px;
-        margin-top: 100px;
+    .nome-perfil {
+        font-size: 1.5rem;
     }
 
-    #paginaindex {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+    .titulo-experiencias {
+        font-size: 1.2rem;
     }
-    #superiorindex {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 0px;
+
+    .icones-rodape {
+        gap: 15px;
+    }
 }
-    #inferiorindex {
-    display: flex;
-    flex-direction: column;
-    margin-top: 33dvh;
-    gap: 10px;
-    padding: 0px;
-    }
-    #projetosindex{
-        display: flex;
-        flex-direction: column;
-    
-    }
-    #imagemindex{
-        width: 100%;
-        height: auto;
-    }
-    .cabecalho {
-    font-size: medium;
-    }
-    #principalskills {
-    padding-top: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
 
-    
-}

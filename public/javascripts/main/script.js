@@ -7,7 +7,7 @@ botao.addEventListener('click', sendemail);
 function sendemail() {
   const mensagem = document.getElementById("mensagem").value.trim();
 
-  const destinatario = "pedroeusoudoscosta@gmail.com";
+  const destinatario = "pedroredes.dev@gmail.com";
   const assunto = "Contato - Portfólio";
   const corpo = encodeURIComponent(mensagem);
 
