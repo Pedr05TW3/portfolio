@@ -52,4 +52,26 @@ router.get('/pontos-ambiental', function(req, res, next) {
   res.render('ambiental/pontos', { title: 'Express' });
 });
 
+//Amigo secreto
+router.get('/amigo-secreto', function(req, res, next) {
+  res.render('amigo-sec/index', { title: 'Express' });
+});
+
+//Numero secreto
+router.get('/numero-secreto', function(req, res, next) {
+  res.render('numero-sec/index', { title: 'Express' });
+});
+
+//Pokemon
+router.get('/pokemon', function(req, res, next) {
+  res.render('pokemon/index', { title: 'Express' });
+});
+router.get('/pokemon-1', function(req, res, next) {
+  res.render('pokemon/charmander', { title: 'Express' });
+});
+router.get('/pokemon-2', function(req, res, next) {
+  res.render('pokemon/squirtle', { title: 'Express' });
+});
+
+
 module.exports = router;
